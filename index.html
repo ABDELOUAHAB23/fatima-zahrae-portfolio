@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Cortez - Visual Artist & Sculptor</title>
+    <meta name="description" content="Elena Cortez - Contemporary visual artist and sculptor exploring the boundary between painting and sculpture">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="nav-container">
+            <button id="logo-btn" class="logo">Fatima Zahrae Rjafellah</button>
+            
+            <!-- Desktop Menu -->
+            <div class="desktop-menu">
+                <button class="nav-link active" data-page="home">Home</button>
+                <button class="nav-link" data-page="gallery">Gallery</button>
+                <button class="nav-link" data-page="about">About</button>
+                <button class="nav-link" data-page="exhibitions">Exhibitions</button>
+                <button class="nav-link" data-page="contact">Contact</button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="mobile-menu-btn">
+                <span class="menu-icon">☰</span>
+                <span class="close-icon">✕</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <button class="nav-link-mobile" data-page="home">Home</button>
+            <button class="nav-link-mobile" data-page="gallery">Gallery</button>
+            <button class="nav-link-mobile" data-page="about">About</button>
+            <button class="nav-link-mobile" data-page="exhibitions">Exhibitions</button>
+            <button class="nav-link-mobile" data-page="contact">Contact</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-bg"></div>
+                <div class="hero-content">
+                    <h1 class="hero-title">Fatima Zahrae Rjafellah
+                    </h1>
+                    <p class="hero-tagline">Breaking the Frame of Reality</p>
+                    <div class="scroll-indicator">
+                        <span class="chevron">›</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Vision Section -->
+            <section class="vision-section">
+                <div class="vision-grid">
+                    <div class="vision-text">
+                        <h2>Artistic Vision</h2>
+                        <p>My work exists in the liminal space between painting and sculpture, where two-dimensional surfaces give birth to three-dimensional forms. Each piece is an exploration of the boundary between reality and imagination.</p>
+                        <p>Through the fusion of traditional techniques with contemporary materials, I create works that challenge perception and invite viewers to question the frame that separates art from life.</p>
+                        <button class="btn-primary" data-page="about">Learn More About My Process</button>
+                    </div>
+                    <div class="vision-image">
+                        <img src="TP.jpg">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Works Preview -->
+            <section class="featured-section">
+                <h2>Selected Works</h2>
+                <div id="featured-grid" class="featured-grid"></div>
+                <div class="text-center">
+                    <button class="btn-secondary" data-page="gallery">View Full Gallery</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Gallery Page -->
+        <div id="gallery-page" class="page">
+            <div class="page-header">
+                <h1>Gallery</h1>
+                <p>A collection of works exploring the intersection of form and meaning</p>
+            </div>
+            <div id="gallery-grid" class="gallery-grid"></div>
+        </div>
+
+        <!-- About Page -->
+        <div id="about-page" class="page">
+            <div class="about-container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="TP2.jpg" alt="Elena Cortez">
+                    </div>
+                    <div class="about-text">
+                        <h1>About the Artist</h1>
+                        <p>Elena Cortez is a contemporary visual artist and sculptor whose work challenges the traditional boundaries between painting and sculpture. Born in Barcelona in 1988, she studied at the Royal College of Art in London and currently works between New York and Barcelona.</p>
+                        <p>Her practice is rooted in the exploration of dimensional transformation—how flat surfaces can give birth to three-dimensional forms, and how sculpture can dissolve back into pictorial space. Using a combination of traditional techniques and contemporary materials such as resin, metal, and found objects, she creates works that exist in a state of perpetual becoming.</p>
+                        <p>Elena's work has been exhibited internationally and is held in private collections across Europe and North America. She has received numerous awards including the Turner Prize nomination and the International Sculpture Prize.</p>
+                    </div>
+                </div>
+
+                <div class="philosophy-section">
+                    <h2>Artistic Philosophy</h2>
+                    <div class="philosophy-grid">
+                        <div>
+                            <h3>Influences</h3>
+                            <p>Drawing inspiration from artists like Anselm Kiefer, Lucio Fontana, and contemporary sculptors pushing the boundaries of mixed media, my work reflects a deep engagement with materiality and the poetics of space.</p>
+                        </div>
+                        <div>
+                            <h3>Process</h3>
+                            <p>Each piece begins with an intuitive gesture—a mark, a cut, a protrusion. From there, the work evolves through a dialogue between control and surrender, between the planned and the accidental.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exhibitions Page -->
+        <div id="exhibitions-page" class="page">
+            <div class="exhibitions-container">
+                <div class="page-header">
+                    <h1>Exhibitions & Awards</h1>
+                    <p>Selected exhibitions and recognition</p>
+                </div>
+                <div id="exhibitions-list" class="exhibitions-list"></div>
+
+                <div class="awards-section">
+                    <div class="awards-header">
+                        <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                        </svg>
+                        <div>
+                            <h2>Recognition</h2>
+                            <ul>
+                                <li>• Turner Prize Nomination, 2023</li>
+                                <li>• International Sculpture Prize, Venice Biennale, 2023</li>
+                                <li>• Emerging Artist Award, Art Basel, 2022</li>
+                                <li>• Royal College of Art Distinguished Alumni, 2021</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact-page" class="page">
+            <div class="contact-container">
+                <div class="page-header">
+                    <h1>Get in Touch</h1>
+                    <p>For inquiries, commissions, or collaborations</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" id="contact-name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" id="contact-email">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea id="contact-message" rows="6"></textarea>
+                        </div>
+                        <button id="submit-btn" class="btn-submit">Send Message</button>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="info-block">
+                            <h3>Studio Location</h3>
+                            <p>Brooklyn, New York<br>Barcelona, Spain</p>
+                        </div>
+
+                        <div class="info-block">
+                            <h3>Connect</h3>
+                            <div class="social-links">
+                                <a href="#" aria-label="Instagram">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                    </svg>
+                                </a>
+                                <a href="#" aria-label="Email">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <h3>Representation</h3>
+                            <p>Modern Art Gallery<br>New York, NY<br>contact@modernartgallery.com</p>
+                        </div>
+
+                        <div class="info-block">
+                            <h3>Commissions</h3>
+                            <p>Available for private commissions and site-specific installations. Please include details about your project and timeline in your message.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-info">
+                <h2 id="lightbox-title"></h2>
+                <p id="lightbox-medium" class="lightbox-medium"></p>
+                <p id="lightbox-dimensions" class="lightbox-dimensions"></p>
+                <p id="lightbox-description" class="lightbox-description"></p>
+                <button id="close-lightbox" class="btn-close">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Elena Cortez. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
